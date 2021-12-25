@@ -6,6 +6,15 @@
     4. The children classes that extend the parent class
 
     5. and then public static void main ke lye class :)
+
+
+    The Parent class delegates functionality to the helper classes
+
+    The helper classes under a specific interface are responsible for adding functionality to that interface
+
+    The parent class has data members, each one an object of one interface
+
+    The interface implements functionality that may be present in some child classes, and absent in other child classes
  */
 
 /* Interfaces */
@@ -43,8 +52,9 @@ class QuietBark implements BarkBehaviour {
     }
 }
 
-/* Super class (ek hi hai)*/
+/* Super / Parent class (ek hi hai)*/
 abstract class Dog {
+    /* data members, which are object of interfaces */
     EatBehaviour eatBehaviour;
     BarkBehaviour barkBehaviour;
 
