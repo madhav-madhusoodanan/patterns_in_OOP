@@ -1,3 +1,13 @@
+/* 
+    There are 4 parts in this code
+    1. Interfaces
+    2. Helper classes (that implement interfaces)
+    3. The Main parent class (for which we are writing code)
+    4. The children classes that extend the parent class
+
+    5. and then public static void main ke lye class :)
+ */
+
 /* Interfaces */
 interface EatBehaviour {
     public void eat();
