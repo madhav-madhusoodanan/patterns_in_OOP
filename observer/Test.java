@@ -9,7 +9,7 @@ import java.util.*;
     The observer has the reponsibility of updating itself with new information, when it comes
 */
 
-/* Subject (The class that all the observers are looking at) */
+/* ================================================= Subject (The class that all the observers are looking at) ================================================= */
 interface Subjected {
     public void informAll(Message msg);
     public void addObserver(Observer ob);
@@ -38,7 +38,7 @@ class Subject implements Subjected {
     }
 }
 
-/* Observer () */
+/* ================================================= Observer ================================================= */
 interface Observes {
     public void update(Message m);
 }
@@ -52,7 +52,7 @@ class Observer implements Observes {
     }
 }
 
-/* Message content */
+/* ================================================= Message content ================================================= */
 class Message {
     public String contents;
     Message(String data){

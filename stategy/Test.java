@@ -17,7 +17,7 @@
     The interface implements functionality that may be present in some child classes, and absent in other child classes
  */
 
-/* Interfaces */
+/* ==================================================== Interfaces ==================================================== */
 interface EatBehaviour {
     public void eat();
 }
@@ -25,7 +25,7 @@ interface BarkBehaviour {
     public void bark();
 }
 
-/* Helper classes */
+/* ================================================== Helper classes ================================================== */
 class ProteinDiet implements EatBehaviour {
     @Override
     public void eat(){
@@ -52,7 +52,7 @@ class QuietBark implements BarkBehaviour {
     }
 }
 
-/* Super / Parent class (ek hi hai)*/
+/* ================================================== Super / Parent class (ek hi hai) ==================================================*/
 abstract class Dog {
     /* data members, which are object of interfaces */
     EatBehaviour eatBehaviour;
@@ -67,7 +67,7 @@ abstract class Dog {
     }
 }
 
-/* Child classes */
+/* ================================================== Child classes ================================================== */
 class Labrador extends Dog{
     Labrador(){
         eatBehaviour = new ProteinDiet();
