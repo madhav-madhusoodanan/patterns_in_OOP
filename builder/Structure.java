@@ -1,8 +1,13 @@
-/* Only the structure has been desscribed here
+/* Only the structure has been described here
 
     Much of the interface implementations have been omitted here for cleanliness
     
     Navigate to Full.java to see the full implementation
+
+    1. The builders can manipulate the house composition
+    2. The director tells the builder to go through a specific sequence of manipulations
+    3. There is a builder for each variant of the product (here, it is houses)
+    4. In the end, the builder presents the product, in the main function
  */
 
 /* ============================================= Builder interface ============================================= */
