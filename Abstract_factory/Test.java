@@ -39,7 +39,7 @@ public class Variant2_Factory extends Factory {
 
 /* ======================================= Product interface and its concrete classes' implementation ======================================= */
 interface Product {
-    public void describe(){}
+    public void describe();
 }
 
 public class Product1_Variant1 implements Product {
