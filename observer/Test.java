@@ -75,13 +75,13 @@ class Test {
         sub.addObserver(ob3);
         sub.addObserver(ob4);
 
-        Message msg = new Message("RUN!");
+        Message msg = new Message("Green light");
         sub.informAll(msg);
 
         sub.removeObserver(ob2);
         sub.removeObserver(ob1);
 
-        msg = new Message("STOP!");
+        msg = new Message("Red light");
         sub.informAll(msg);
     }
 }
